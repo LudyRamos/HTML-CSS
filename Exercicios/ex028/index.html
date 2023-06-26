@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-elementos em CSS</title>
+    <link rel="shortcut icon" href="favicon_io (10)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+        
+        div:hover > p {
+            display: block;
+            color: black;
+            background-color:#FFC3D9;
+            width: 300px;
+        }
+
+        div:hover{
+            color: black;
+            background-color:#FFC3D9;
+            width: 300px;
+        }    
+    </style>
+</head>
+<body>
+
+    <p>Apoio aos Estudos</p>
+    <p>Caso de duvidas:</p>
+    <div>
+        passe o mause aqui
+        <p>Acesse <a href="AAE.html" target="_blank">Apoio aos Estudos</a></p>
+    </div>
+
+
+    
+
+</body>
+</html>
+       

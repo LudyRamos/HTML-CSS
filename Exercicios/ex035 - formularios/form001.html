@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body{
+            background-color: rgb(238, 186, 169);
+            
+        }
+
+        h1{
+            color: rgb(132, 33, 53);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>meu primeiro formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="off">
+
+        <p><label for="inome">nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p><label for="isobrenome">sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+        </p>
+    </form>
+
+</body>
+</html>

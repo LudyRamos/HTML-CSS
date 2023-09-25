@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body{
+            background-color:rgb(235, 185, 119);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iname">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="10" placeholder="nome completo" autocomplete="nome">   
+        </p>
+
+        <p>
+            <label for="imedia">Media</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" required>
+        </p>
+
+        <p>
+           <label for="imes">Mes</label>
+           <input type="month" name="mes" id="imes" required> 
+        </p>
+
+        <P>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" required>
+        </P>
+
+        <p>
+            <label for="ihora">Horario</label>
+            <input type="time" name="Hora" id="ihora" required>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
